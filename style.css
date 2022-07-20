@@ -55,7 +55,7 @@ a {
 
 .top-button {
     color: white;
-    padding: 2%;
+    padding: 2% 4%;
     /* padding: 16px 25px; */
     gap: 10px;
     background-color: #DD0000;
@@ -123,6 +123,14 @@ a {
 .matches img {
     width: 100%;
 }
+.transfer-button{
+    color:#161616;
+    padding: 2% 4%;
+    border-radius: 5px;
+    font-weight: 500;
+    border: 2px solid #161616;
+
+}
 
 .match {
     border: 1px solid gainsboro;
@@ -132,7 +140,9 @@ a {
 .match-detail {
     padding: 20px;
 }
-
+.match-detail h3{
+    margin-top: 20px;
+}
 .match-info {
     display: flex;
     align-items: center;
@@ -199,6 +209,13 @@ Media Queries
 
 /* Mobile Devices */
 @media screen and (max-width: 576px) {
+
+    main,
+    header {
+        margin: 20px;
+        padding: 20px;
+    }
+
     h1 {
         font-size: 22px;
         line-height: 33px;
@@ -275,9 +292,11 @@ Media Queries
 /* Tablet Devices */
 @media screen and (min-width: 576px) and (max-width: 991px) {
 
-    main,
     header {
         margin: 50px;
+    }
+    main{
+        margin: 0px 50px 50px 50px;
     }
 
     h1 {
@@ -288,7 +307,7 @@ Media Queries
     }
 
     .top-banner {
-        width: 650px;
+        width: 100%;
         border-radius: 30px;
     }
 
@@ -298,6 +317,30 @@ Media Queries
         text-overflow: ellipsis;
     }
 
+    .middle-section {
+        flex-direction: column;
+    }
+
+    .upcoming-match {
+        background-color: white;
+    }
+
+    .matchs-option {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* margin: 0px 50px 0px 50px; */
+        /* margin-right: 50px; */
+        justify-content: space-between;
+    }
+
+    .upcoming {
+        text-align: center;
+        border: 2px solid #E8E8E8;
+        width: 100%;
+        padding: 0px; 
+        margin-right: 80px;
+        margin-bottom: 0px;
+    }
     .matches {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -305,22 +348,6 @@ Media Queries
     .match {
         width: 310px;
         height: 414.21px;
-    }
-    .middle-section {
-            flex-direction: column;
-    }    
-    .upcoming-match {
-       
-        background-color: white;
-    }
-    .matchs-option{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-    }
-    .upcoming {
-        text-align: center;
-        border: 2px solid #E8E8E8;
-
     }
 
 }
