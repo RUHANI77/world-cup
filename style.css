@@ -60,6 +60,25 @@ a {
     gap: 10px;
     background-color: #DD0000;
     border-radius: 5px;
+    animation-name: button-top;
+    animation-duration: 10s;
+}
+@keyframes button-top {
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: rgb(76, 76, 6);
+    }
+
+    50% {
+        background-color: slateblue;
+    }
+
+    100% {
+        background-color: rgb(9, 239, 9);
+    }
 }
 
 #icon {
